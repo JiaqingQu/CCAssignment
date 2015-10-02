@@ -47,7 +47,7 @@ public class Solution05 {
 
         System.out.println(validateBST(n1));
 
-
+        //
     }
 
     public static boolean validateBST(BinaryTreeNode n){
