@@ -39,7 +39,7 @@ public class Solution02 {
             top = top.next;
 
             return val;
-            
+
         }
 
         int peek() throws EmptyStackException{
