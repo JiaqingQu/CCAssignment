@@ -6,6 +6,18 @@ import java.util.Scanner;
 public class Solution03 {
 
     /**
+     * FOLLOW-UP:
+     * There are two ways we can do it:
+     *  1. Simply pop the node in that certain stack and leave that stack with no-full capacity.
+     *     Pros & Cons: This is easy to implement. However, we may leave many empty pointers after many operations,
+     *      which is very space-consuming.
+     *  2. Write a shift function that pop the element in the next stack and put it in the bottom of the current stack.
+     *      Whenever popAt(int index) is called, call that shift function for every stacks which are later than index and before the last one.
+     *     Pros & Cons: This makes sure that every sub stacks are in their full capacity. However, this is very time-consuming.
+     *      Since every time popAt is called, all the elements afterwards will be touched.
+     * */
+
+    /**
      * Use an ArrayList to keep track of all the stacks
      * */
     private static class SetOfStacks {
